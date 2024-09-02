@@ -1,0 +1,9 @@
+services:
+
+  docs:
+    build:
+      context: .
+    volumes:
+      - .:/docs
+    ports:
+      - 8889:8000
