@@ -6,6 +6,24 @@ use_directory_urls: true
 nav:
   - Home:
     - index.md
+  - Get started:
+    - get-started/index.md
+    - Using TNA Frontend:
+      - get-started/using-tna-frontend/index.md
+      - Compiled files: get-started/using-tna-frontend/compiled.md
+      - npm: get-started/using-tna-frontend/npm.md
+      - CDN: get-started/using-tna-frontend/cdn.md
+    - Analytics: get-started/analytics.md
+    - Cookies: get-started/cookies.md
+  - Developing:
+    - developing/index.md
+    - Accessibility: developing/accessibility.md
+    - Contributing: developing/contributing.md
+    - Publishing: developing/publishing.md
+  - Structure:
+    - structure.md
+  - History:
+    - history.md
 theme:
   name: material
   favicon: https://raw.githubusercontent.com/nationalarchives/tna-frontend/main/src/nationalarchives/assets/images/favicon.ico
