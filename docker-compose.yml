@@ -1,9 +1,8 @@
 services:
 
   docs:
-    build:
-      context: .
+    image: squidfunk/mkdocs-material
     volumes:
       - .:/docs
     ports:
-      - 8889:8000
+      - 6007:8000
