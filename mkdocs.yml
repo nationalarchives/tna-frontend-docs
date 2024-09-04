@@ -15,15 +15,15 @@ nav:
       - CDN: get-started/using-tna-frontend/cdn.md
     - Analytics: get-started/analytics.md
     - Cookies: get-started/cookies.md
-  - Developing:
-    - developing/index.md
-    - Accessibility: developing/accessibility.md
-    - Contributing: developing/contributing.md
-    - Publishing: developing/publishing.md
-  - Structure:
-    - structure.md
-  - History:
-    - history.md
+  - Contributing:
+    - contributing/index.md
+    - Accessibility: contributing/accessibility.md
+    - Adding a new component: contributing/add-a-new-component.md
+    - Publishing: contributing/publishing.md
+    - Structure: contributing/structure.md
+  - About:
+    - about/index.md
+    - History: about/history.md
 theme:
   name: material
   favicon: https://raw.githubusercontent.com/nationalarchives/tna-frontend/main/src/nationalarchives/assets/images/favicon.ico

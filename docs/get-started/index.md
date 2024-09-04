@@ -1,1 +1,1 @@
-# Getting started with TNA Frontend
+# Get started with TNA Frontend
