@@ -8,9 +8,11 @@ nav:
     - index.md
   - Get started:
     - get-started/index.md
+    - Prototype: get-started/prototype.md
     - Install: get-started/install.md
     - Setup: get-started/setup.md
     - Configure: get-started/configure.md
+    - Components: get-started/components.md
     - Analytics: get-started/analytics.md
     - Cookies: get-started/cookies.md
   - Contributing:
