@@ -6,9 +6,27 @@ Link the `nationalarchives/all.css` file in your project through the HTML.
 
 This includes all the styles for things like components, typography and the grid system.
 
+### Print styles
+
+Include the `nationalarchives/print.css` file in your HTML to enable some basic print styles:
+
+```html
+<link rel="stylesheet" href="print.css" media="print">
+```
+
 ### Font Awesome
 
 Optionally, you can include the `nationalarchives/font-awesome.css` file which enables you to use the free [Font Awesome icons](https://fontawesome.com/search?o=r&m=free) in your service.
+
+### Internet Explorer
+
+There are some basic styles to ensure users using Internet Explorer can read all objects on the page and navigate.
+
+Include the `nationalarchives/ie.css` file in your HTML with a media query that only targets Internet Explorer:
+
+```html
+<link rel="stylesheet" href="ie.css" media="all and (-ms-high-contrast: none), (-ms-high-contrast: active)">
+```
 
 ## JavaScript
 
