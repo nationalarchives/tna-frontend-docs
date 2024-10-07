@@ -8,11 +8,9 @@ nav:
     - index.md
   - Get started:
     - get-started/index.md
-    - Using TNA Frontend:
-      - get-started/using-tna-frontend/index.md
-      - Compiled files: get-started/using-tna-frontend/compiled.md
-      - npm: get-started/using-tna-frontend/npm.md
-      - CDN: get-started/using-tna-frontend/cdn.md
+    - Install: get-started/install.md
+    - Setup: get-started/setup.md
+    - Configure: get-started/configure.md
     - Analytics: get-started/analytics.md
     - Cookies: get-started/cookies.md
   - Contributing:

@@ -8,7 +8,7 @@ The principles of cookie handling are:
 
 ## Policies
 
-As standard we should use at least these three classes of cookies:
+As standard we use three classes of cookies:
 
 - `essential` - we don't need to ask permission for these
 - `usage` - analytics, tracking, data gathering
@@ -35,7 +35,7 @@ sequenceDiagram
     opt Next request
         User->>Browser: Request page
         Browser->>Server: HTTP request with cookie policy
-        Server->>Browser: Rendered HTML with analytics but no cookie banner
+        Server->>Browser: Rendered HTML with analytics (if accepted) but no cookie banner
     end
 ```
 
@@ -45,7 +45,7 @@ sequenceDiagram
 sequenceDiagram
     User->>Browser: Request page
     Browser->>Server: HTTP request with cookie policy
-    Server->>Browser: Rendered HTML with analytics but no cookie banner
+    Server->>Browser: Rendered HTML with analytics (if accepted) but no cookie banner
 ```
 
 ## Cookie library
@@ -54,26 +54,20 @@ When you load in the tna-frontend JavaScript, it comes with a [cookie library](h
 
 This is loaded into the `window` object as `TNAFrontend.Cookies`:
 
-```JavaScript
+```js
 // Initialise a new Cookie instance
-const cookies = new TNAFrontend.Cookies();
+const cookies = new window.TNAFrontend.Cookies();
 
 // Log all the cookies to the console
 console.log(cookies.all);
 ```
 
-### Functions
+If you are building your own JavaScript, you can import the cookies class from `all.mjs` or `all+analytics.mjs`:
 
-- `cookies.all` - Returns all the cookies
-- `cookies.exists(key)` - Returns `true` if a cookie exists with the name `key`
-- `cookies.hasValue(key, value)` - Returns `true` if the cookie with the name `key` is equal to `value`
-- `cookies.get(key)` - Returns the cookie with the name `key`
-- `cookies.set(key, value, maxAge, path)` - Set a cookie (max age default is one year, default path is `/`)
-- `cookies.delete(key)` - Deletes the cookie with the name `key`
-- `cookies.allPolicies` - Returns all the cookie policies
-- `cookies.acceptPolicy(policy)` - Accepts the policy with the name `policy`
-- `cookies.rejectPolicy(policy)` - Rejects the policy with the name `policy`
-- `cookies.setPolicy(policy, accepted)` - Accepts or rejects the policy with the name `policy` depending on the value of `accepted`
-- `cookies.acceptAllPolicies()` - Accepts all policies
-- `cookies.rejectAllPolicies()` - Rejects all policies
-- `cookies.isPolicyAccepted(policy)` - Returns `true` or `false` depending on whether the policy has been accepted
+```js
+import { Cookies } from "@nationalarchives/frontend/nationalarchives/all.mjs";
+
+const cookies = new Cookies();
+
+console.log(cookies.all);
+```
