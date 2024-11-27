@@ -4,10 +4,8 @@ repo_url: https://github.com/nationalarchives/tna-frontend-docs
 dev_addr: localhost:6007
 use_directory_urls: true
 nav:
-  - Home:
-    - index.md
   - Get started:
-    - get-started/index.md
+    - index.md
     - Prototype: get-started/prototype.md
     - Install: get-started/install.md
     - Setup: get-started/setup.md
