@@ -10,9 +10,12 @@ nav:
     - Install: get-started/install.md
     - Setup: get-started/setup.md
     - Configure: get-started/configure.md
-    - Components: get-started/components.md
-    - Analytics: get-started/analytics.md
-    - Cookies: get-started/cookies.md
+  - Using:
+    - using/index.md 
+    - Components: using/components.md
+    - CSS tools: using/css-tools.md
+    - Analytics: using/analytics.md
+    - Cookies: using/cookies.md
   - Contributing:
     - contributing/index.md
     - Accessibility: contributing/accessibility.md
