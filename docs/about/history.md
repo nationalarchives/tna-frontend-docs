@@ -25,7 +25,7 @@ It would have also been nice to have a toolkit that was:
 
 There was already a solution in [nationalarchives/tdr-components](https://github.com/nationalarchives/tdr-components) which is specific to TDR and extends the GOV.UK components and styles. We needed to create a more generic set of components that were suitable for every TNA service, ~~while still extending the GOV.UK components and styles~~ _[Edit: this was not implemented]_ but with a more TNA-branded look and feel.
 
-We also had [nationalarchives/tna-frontend-design-toolkit](https://github.com/nationalarchives/tna-frontend-design-toolkit) which aimed to provide similar functionality but wasn't as feature-ful as we needed and wasn't published to NPM which means it has to be [copied into the projects that require it](https://github.com/nationalarchives/ds-wagtail/tree/develop/sass/tna-toolkit).
+We also had [nationalarchives/tna-frontend-design-toolkit](https://github.com/nationalarchives/tna-frontend-design-toolkit) which aimed to provide similar functionality but wasn't as feature-ful as we needed and wasn't published to NPM which means it has to be copied into the projects that require it.
 
 ## Proposed solution
 
