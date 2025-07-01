@@ -25,13 +25,22 @@ As a result, **if you require icons, using a CDN like jsdelivr.com is not the pr
 Include the CSS in the `<head>` element of your page:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nationalarchives/frontend@0.2.15/nationalarchives/all.css" integrity="sha256-WVAh+/5fHHcNqyOWkvwD52cXAg/ATlYdsNke+YvVbwQ=" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@nationalarchives/frontend@0.2.15/nationalarchives/all.css"
+  integrity="sha256-WVAh+/5fHHcNqyOWkvwD52cXAg/ATlYdsNke+YvVbwQ="
+  crossorigin="anonymous"
+/>
 ```
 
 Add the JavaScript to the end of your page just before your closing `</body>` tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@nationalarchives/frontend@0.2.15/nationalarchives/all.js" integrity="sha256-D5Cf2TU0KX3FYuuPI1O3oAcKxPgS9QUcKWpIhd5fEOI=" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@nationalarchives/frontend@0.2.15/nationalarchives/all.js"
+  integrity="sha256-D5Cf2TU0KX3FYuuPI1O3oAcKxPgS9QUcKWpIhd5fEOI="
+  crossorigin="anonymous"
+></script>
 ```
 
 For more guidance, read [using CDNs from the TNA Engineering Handbook](https://nationalarchives.github.io/engineering-handbook/third-party/cdn/).

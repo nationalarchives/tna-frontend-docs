@@ -78,7 +78,7 @@ Some components may use utilities such as headings. Where these styles have alre
 
 Components should not implement any `!important` rules. There are exceptions such as the skip link that needs to be visually hidden in a way that it is still available for someone navigating a site with a keyboard.
 
-Components should not care about the context or layout within which they are used. As an example, a breadcrumb *could* be placed within a card or a footer element although in reality we wouldn't allow this.
+Components should not care about the context or layout within which they are used. As an example, a breadcrumb _could_ be placed within a card or a footer element although in reality we wouldn't allow this.
 
 ## Overrides
 

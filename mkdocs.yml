@@ -5,26 +5,26 @@ dev_addr: localhost:6007
 use_directory_urls: true
 nav:
   - Get started:
-    - index.md
-    - Prototype: get-started/prototype.md
-    - Install: get-started/install.md
-    - Setup: get-started/setup.md
-    - Configure: get-started/configure.md
+      - index.md
+      - Prototype: get-started/prototype.md
+      - Install: get-started/install.md
+      - Setup: get-started/setup.md
+      - Configure: get-started/configure.md
   - Using:
-    - using/index.md 
-    - Components: using/components.md
-    - CSS tools: using/css-tools.md
-    - Analytics: using/analytics.md
-    - Cookies: using/cookies.md
+      - using/index.md
+      - Components: using/components.md
+      - CSS tools: using/css-tools.md
+      - Analytics: using/analytics.md
+      - Cookies: using/cookies.md
   - Contributing:
-    - contributing/index.md
-    - Accessibility: contributing/accessibility.md
-    - Adding a new component: contributing/add-a-new-component.md
-    - Publishing: contributing/publishing.md
-    - Structure: contributing/structure.md
+      - contributing/index.md
+      - Accessibility: contributing/accessibility.md
+      - Adding a new component: contributing/add-a-new-component.md
+      - Publishing: contributing/publishing.md
+      - Structure: contributing/structure.md
   - About:
-    - about/index.md
-    - History: about/history.md
+      - about/index.md
+      - History: about/history.md
 theme:
   name: material
   favicon: https://raw.githubusercontent.com/nationalarchives/tna-frontend/main/src/nationalarchives/assets/images/favicon.ico
