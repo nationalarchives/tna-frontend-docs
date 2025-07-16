@@ -1,9 +1,9 @@
 # Get started with TNA Frontend
 
-1. [Prototype](./get-started/prototype.md) - Create prototypes using TNA Frontend
-1. [Install](./get-started/install.md) - Install TNA Frontend in your service
-1. [Setup](./get-started/setup.md) - Use TNA Frontend in your service
-1. [Configure](./get-started/configure.md) - Configure TNA Frontend to your needs
+1. [Create prototypes](./get-started/prototype.md) using TNA Frontend
+1. [Install](./get-started/install.md) TNA Frontend in your service
+1. [Setup](./get-started/setup.md) TNA Frontend in your service
+1. [Configure](./get-started/configure.md) TNA Frontend to your needs
 
 ---
 
