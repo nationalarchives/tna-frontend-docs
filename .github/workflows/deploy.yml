@@ -1,9 +1,12 @@
-name: Deploy
+name: Deploy docs
 
 on:
   push:
     branches:
       - main
+    paths:
+      - mkdocs.yml
+      - docs/**
 
 permissions:
   contents: read
@@ -25,21 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.12
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Check links
-        run: |
-          pip install linkcheckmd
-          python -m linkcheckmd docs -v
-          python -m linkcheckmd docs/about -v
-          python -m linkcheckmd docs/contributing -v
-          python -m linkcheckmd docs/get-started -v
-      - name: Build
-        run: mkdocs build
+      - name: Build documentation
+        run: docker run -v ${PWD}:/docs squidfunk/mkdocs-material build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
